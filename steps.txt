@@ -1,0 +1,16 @@
+==================================VIEWS=====================================
+1- import Paginator .
+2- queryset = objects.all()
+3- > paginator = Paginator(queryset,9)  # show 9 objects per page
+4- > page_number = request.GET['page']
+5- > page_obj = paginator.get_page(page_number)
+6- > context = {'queryset' = page_obj}
+
+===================================TEMPLATE==================================
+1- to know current page => queryset.number
+2- total page numbers => queryset.paginator.num_pages
+3- next and previous => queryset.next_page_number ,  queryset.previous_page_number
+4- boolean built-in functions => queryset.has_previous , queryset.has_next
+
+
+note : "queryset = page_obg"
