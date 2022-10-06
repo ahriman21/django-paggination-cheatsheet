@@ -1,5 +1,5 @@
 ==================================VIEWS=====================================
-1- import Paginator .
+1- import Paginator ==> from django.core.paginator import Paginator.
 2- queryset = objects.all()
 3- > paginator = Paginator(queryset,9)  # show 9 objects per page
 4- > page_number = request.GET['page']
